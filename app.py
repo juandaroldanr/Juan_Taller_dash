@@ -22,7 +22,7 @@ app.config.suppress_callback_exceptions = True
 # Load data from csv
 def load_data():
     # To do: Completar la función 
-    df = pd.read_csv("Juan_Taller_dash/datos_energia.csv")
+    df = pd.read_csv("/home/ec2-user/Juan_Taller_dash/datos_energia.csv")
     # Convertir la columna de fecha a formato datetime
     df['time'] = pd.to_datetime(df['time'])
     # Establecer la columna de fecha como el índice del DataFrame
